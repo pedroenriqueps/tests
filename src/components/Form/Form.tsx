@@ -39,7 +39,8 @@ export function RegisterUserForm() {
 
     return (
         <div className="w-full max-w-[40%] mx-auto mt-10">
-            <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(onSubmit)}>
+            <h1 className="title1">Zod form</h1>
+            <form className="bg-slate-800 shadow-md rounded px-8 pt-6 pb-8 mb-4" onSubmit={handleSubmit(onSubmit)}>
 
                 <div className="mb-4">
                     {Object.keys(errors).length > 0 && (
@@ -53,11 +54,11 @@ export function RegisterUserForm() {
                 </div>
 
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                    <label className="block text-gray-500 text-sm font-bold mb-2">
                         Username
                     </label>
                     <input
-                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${errors.username ? 'border-red-500' : ''}`}
+                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-50 leading-tight focus:border-2 focus:border-white outline-none bg-transparent focus:shadow-outline ${errors.username ? 'border-red-500' : ''}`}
                         type="text"
                         placeholder="Username"
                         {...register('username')}
@@ -65,11 +66,11 @@ export function RegisterUserForm() {
                 </div>
 
                 <div className="mb-6">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">
+                    <label className="block text-gray-500 text-sm font-bold mb-2">
                         Password
                     </label>
                     <input
-                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 placeholder:text-gray-600 leading-tight focus:outline-none focus:shadow-outline ${errors.password ? 'border-red-500' : ''}`}
+                        className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-50 mb-3 placeholder:text-gray-600 bg-transparent leading-tight focus:border-2 focus:border-white outline-none focus:shadow-outline ${errors.password ? 'border-red-500' : ''}`}
                         type="password"
                         placeholder="***************"
                         {...register('password')}

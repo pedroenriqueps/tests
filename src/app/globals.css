@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.title1 {
+    @apply font-sans text-5xl text-purple-600 font-bold text-center
+}
