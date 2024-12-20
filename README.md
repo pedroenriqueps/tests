@@ -1,4 +1,4 @@
-# 📚 Guia de Estudos e Boas Práticas em Next.js
+# 📚 Boas Práticas em Next.js
 
 Este guia reúne dicas e práticas úteis para desenvolvimento em Next.js. Atualizado continuamente com novas seções e insights.
 
